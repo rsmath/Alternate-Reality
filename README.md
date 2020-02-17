@@ -1,4 +1,4 @@
-# Alternate Reality
+# Alternate Reality [![HitCount](http://hits.dwyl.com/ramanshsharma2806/Alternate-Reality.svg)](http://hits.dwyl.com/ramanshsharma2806/Alternate-Reality)
 
 -------
 
