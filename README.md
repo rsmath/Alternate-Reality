@@ -79,7 +79,7 @@ n_L = 2 # two LSTM layers
 
 ---
 
-After tuning the hyperparameters, I trained on 100 epochs and managed to score a **93% accuracy on the training set**. This accuracy is decently good considering the amount of data is fed and the computing power I had (sessions of 35GB on Google colab).
+After tuning the hyperparameters, I trained on 100 epochs and managed to score a **96.78% accuracy on the training set**. This accuracy is decently good considering the amount of data is fed and the computing power I had (sessions of 35GB on Google colab).
 
 These are the first 400 characters my model wrote:
 
