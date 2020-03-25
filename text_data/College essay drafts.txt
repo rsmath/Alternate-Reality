@@ -1,0 +1,155 @@
+﻿Ramansh Sharma                        College Essay Draft                                Date-9/25/18
+With a packet of pretzels in my left hand, and my phone in my right hand, I sat hopeless at a table with four seniors. Five laptops, five brilliant minds, the entire internet at our fingertips, and we had nothing. It was five in the evening and we were facing a seemingly impossible dilemma.
+I knew two of them from the badminton team already. My hackathon teammates were taking Post-AP Game Programming while I was just a shy freshmen with minimal knowledge of HTML and CSS. Our project was truly exceptional. A piano tiles game with integrated hand motions like up, down, and rotations that were detected by a motion sensor armband. The first part was easy. They wrote the code for the basic piano tiles game in just four hours. But then came the time to attach and implement the motion sensor into our program. None of us had ever connected a hardware to a software, let alone something as convoluted as a motion sensor armband. No one on our team, not even the supposedly gaming legends and nerdy seniors, had the slightest idea on how to position the hand motions at regular intervals in the game. 
+It was five in the evening, and we could hear the joyous laughs and roars of other teams as they triumphantly showed their finished products to the supervisors to get a headstart before the final presentations. All this happened while we sat there like mummies for two long hours. Crumbs of pretzels and spills of gatorade all over us, we waited for a miracle to snap us out of our slumber. The hackathon was nearing its end and if we did not figure out a solution fast, our game would be demoted from something unique and fascinating to a something, nothing. It seemed as if my first ever experience of a hackathon would have been ruined, my to-be interest in computer science demolished. My team and I had little to no hope left of deciphering this riddle of the Sphinx. As I was imagining walking back to my vallo bus and then towards my house after the hackathon, my fantasy suddenly dissolved. Then, it struck me like Zeus’s lightning bolt. I realized we were not able to place the motions because we were trying to randomly generate it with an algorithm. What we needed to do instead, was use an incremental mathematical series to position the hand motions with respect to the tiles to maximize the difficulty level. 
+I did not believe myself at first, I mean, how could I, a freshman, solve something I have never had any experience with, while my experienced teammates pulled their hair out trying to do it. With much courage, I approached the team leader, and asked him if I can show him something. When he eagerly said yes, to obviously take a moment away from the problem, I had second thoughts of leading him back into it. However, I ignored my second thoughts and explained my theory to him on the classroom whiteboard with a marker. When I finished writing the ten centimeter equation, his eyes lay open as wide as the Argo itself. He slowly turned towards me, his head lowering to look into my eyes. The next thing I knew, he was thanking me out of his breath for the solution. I would have perceived such praise to be sarcastic if he didn’t hurry back to the other seniors, drag them to the whiteboard and let them too, marvel at the solution. I was rendered unnoticed after that, for the coders immediately jumped into the implementation, with only thirty minutes remaining. Be that as it may, I felt content, having contributed meaningfully to the team. 
+After that, it took them about fifteen minutes to write the ten lines of code that effectively jump started my interest in this field. We finished the game, and rewarded ourselves with freshly delivered pizzas in the cafeteria. As expected, the taste of the pizza was exquisite, comparable to the essence of ambrosia itself. In a way, it felt like they specially came to congratulate us. To my surprise, the team quoted me as brilliant and creative in the “how did you do it” section of submitting the game. This was the first time I was honored for a contribution I made. Not only did it make me feel important, it started a fire inside me, a fire of confidence. That fire has never gone out, and it never will.
+As the three fates deemed it so, we were able to give a breaktaking presentation of the game because of a talented gamer we had on our team. Aki, as he was called, scored 152 points in the game while most of us only reached about 25. The judges, along with the audience were perplexed by our performance. The presentation ended, and after a mere two seconds of silence, the judges stood up, and gave us a standing ovation, followed by the rest of the audience.
+ It is often said in Greek mythology that belief in the gods is what keeps them immortal forever. On this day, our team was immortalized by the belief and praise of the audience. Our team placed first, each of us winning an iPad Mini, and an unforgettable picture with the CEO of Major League Hacking. I learned about teamwork that day. I learnt that I don’t always have to be the leader or the best guy in a team to be a contributing teammate. All I had to do was to be curious and open minded.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I have never been afraid of heights. It just didn’t make sense. I rather enjoyed climbing up and down trees and park poles as a child. Although the climbing was tedious and time consuming, the jump back down would be the best moment of my evening. Climbing down rapidly, or sometimes just jumping off, I remember feeling the rush of wind on my face, and the weightlessness carrying me away. But there was one kind of height that spooked me out more than any other fear - airplanes.
+         I do not like the window seat on a plane for many reasons. First, while taking off, the quick ascension of the plane changes the viewpoint very abruptly. That, along with the upward force from the plane really scares me. I would often get air sick and end up using more than one air sickness bag. Because of that fear, my family did not take many airplane trips but rather bus and car trips. After five short years of no airplane trips, we finally went to the west coast this past summer. It was August, I was at the peak of my athleticism and had just finished an interesting summer programming course. It was a weeklong trip to San Francisco, Los Angeles, and Las Vegas. I did not realize until much later, that the scariest part for me on this trip would not be on an airplane, but on a helicopter. Surprisingly, our flights to Las Vegas were quiet. But two days after we got there my parents revealed to me a “surprise” trip. One to the majestic depths and jagged cliffs of the Grand Canyon. 
+After hours of crying and wailing, my parents finally forced me into agreeing to get into the helicopter ride that would take us in the canyon in exchange for a new smartphone plan and letting me go to the hotel swimming pool alone. Our helicopter ride started smoothly, not much different from a ferris wheel ride. As we went towards the canyon, I kept reporting small details of the ride to myself like “twenty feet ascension” and “tilt towards the right, small nose dive”. This all proved to be worthless to keep me calm when the dreadful moment came. As were about to head back to the helipad station, the pilot tilted the helicopter almost ninety degrees to the right. At this very moment, I saw the mistake of taking the window seat again, literally - I could see four thousand feet straight down the tallest canyon in the world. All that separated me and absolute demise was a three inch sheet of polycarbonate glass. But I had an unanticipated realization. I was not scared anymore. Maybe it was the nice swim I took the previous night or the new plan my parents promised me, but I just was not scared anymore. As a matter of fact, I liked thinking over and over in my head that I was atop the tallest canyon in the world, in just a helicopter. The sight was no less unnerving, but my childhood bravery returned, and I regained my confidence. On the flight back to New York, I did not sleep one minute of the six hour flight. I gazed out the window, marvelling at the world above the clouds, trying to take in all the scenes I could after staying away from the clouds for five long years. I looked and looked, stared and absorbed, the spectacle atop the skies.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+It was my eight birthday when I held my first 3 by 3 Rubix cube. Looking at the nine tiles of six colors jumbled across six sides mesmerized me just like the Sirens did to Odysseus. It was a moment of pure delight and bewilderment. I spent a total of ten hours that day trying to solve the cube. Although my efforts went in vain, I realized I could not give up. This was the first time I had a sense of sheer defeat which only urged me to give all my power into solving the cube. I spent hours each day trying to figure out patterns and techniques to align red on one side, blue on the opposite side, and white on the top without scrambling the other colors. The cube became my childhood workplace. After coming back from school, I would go to my room, sit in silence trying to solve this mystery that lay in front of me. It was about this time that I learned to admire my problems rather than hate them. It built a sense of maturity into me, partly because solving a Rubix cube required a sincere and courageous yet resilient mind.
+After a few weeks, I nearly gave up. But one of my close friends thankfully saw this, and taught me a valuable lesson. He explained to me that despite all my efforts, I had made one small mistake. I had never asked anyone for help. He pointed out to me a point so prized, that I remind it to myself every morning since that day- it is not unworthy to ask for help from a friend, for collaboration is a human evolutionary behavior meant to be advantageous, it is what separates us as superior beings. I learned that day that by asking him for help, I am not showing vulnerability or weakness, but rather I am accepting my need for help, which portrays my own strength and self-confidence. Within two days, I could solve the 3 by 3 Rubix cube under five minutes using algorithms my friend had taught me. His advice helped me to cruise through the unknown. These cubes were just a mode of entertainment for me until I encountered the mirror cube.
+The mirror cube is the pinnacle of Rubix cubes with instead of having six colors and equally shaped cube pieces, this cube has mirrors on all its sides but has unequal shapes of cube pieces. When it is scrambled, it will haunt a person with its distorted appearance, urging the person to solve it. Ever since I got my mirror cube, my perception on life has changed dramatically. I have come to realize that my cube reflects my life in a number of different ways. With every little piece of knowledge I acquire, I try to reflect it myself. Whether it is a new skill in programming, a move in badminton, or an equation in Physics, I try to use the knowledge in real life. I am no more than what I reflect to the world around me. My cube has perfect stainless steel mirrors on all sides that reflect the images of everything around it. It can lay unsolved for days but I know that I will solve it soon and when that happens, I will have completely blocked its inner darkness from being exposed to the world. Same way, I want to become completely reflective to the world, so that people around me will see me, and learn from me. Being reflective does not mean that I am hiding my identity. Rather, I am appreciating who I am. That is something I have learnt from solving my mirror cube countless times- a person has two identities, one that they admire every moment of their life, and the other that people around admire about them. I aspire to be visible, to be part of something bigger than myself. I want to truly be a contributing factor in the American society, to make this world a better place.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Guilt. That is what I felt when I made the freshmen subs do a six point drill on the court. As their captain this year, I had a different kind of responsibility from previous years. The badminton team has worked like a well oiled machine until now because of the able captains that lead it. This year, the mantle has fallen upon me. For the past three years, I have been the best person on the team. I helped my teammates to learn new forms and moves, but I did so harshly, with force and strictness. However, being a senior as well as the captain now, I realized I cannot use the same techniques as before. After all, a team is only as good as the example the captain portrays. So I changed. Instead of using harsh force to insert
