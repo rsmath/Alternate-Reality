@@ -12,7 +12,7 @@
       "name": "python3",
       "display_name": "Python 3"
     },
-    "accelerator": "GPU"
+    "accelerator": "TPU"
   },
   "cells": [
     {
@@ -52,7 +52,7 @@
       "metadata": {
         "id": "5iokuQUsJI2U",
         "colab_type": "code",
-        "outputId": "b9dbb7ad-927b-4a71-c89b-28ffe4e49800",
+        "outputId": "f0b35145-4ae9-4b62-e8c8-477ca065c937",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 34
@@ -110,7 +110,7 @@
       "metadata": {
         "id": "j-WKyhazY0jD",
         "colab_type": "code",
-        "outputId": "fd7552b1-a730-4d2f-e222-99124a5ae2f8",
+        "outputId": "e7777644-99f8-4a58-d3a8-c002cbc4734f",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 51
@@ -147,10 +147,10 @@
       "metadata": {
         "id": "pKm3VjU9Sv0u",
         "colab_type": "code",
-        "outputId": "e4661c7a-4712-4121-ae01-02be0077ecc1",
+        "outputId": "bf9b7701-649b-42ea-b14b-9d08064475cf",
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 85
+          "height": 323
         }
       },
       "source": [
@@ -182,7 +182,21 @@
         {
           "output_type": "stream",
           "text": [
-            "Not connected to a TPU runtime.\n",
+            "Connected to TPU.\n",
+            "\n",
+            "TPU address is grpc://10.29.70.58:8470\n",
+            "TPU devices:\n",
+            "[_DeviceAttributes(/job:tpu_worker/replica:0/task:0/device:CPU:0, CPU, -1, 6283828849459886334),\n",
+            " _DeviceAttributes(/job:tpu_worker/replica:0/task:0/device:XLA_CPU:0, XLA_CPU, 17179869184, 3716698515135929962),\n",
+            " _DeviceAttributes(/job:tpu_worker/replica:0/task:0/device:TPU:0, TPU, 17179869184, 8602290261851255094),\n",
+            " _DeviceAttributes(/job:tpu_worker/replica:0/task:0/device:TPU:1, TPU, 17179869184, 7726797110384804908),\n",
+            " _DeviceAttributes(/job:tpu_worker/replica:0/task:0/device:TPU:2, TPU, 17179869184, 2101490852177575444),\n",
+            " _DeviceAttributes(/job:tpu_worker/replica:0/task:0/device:TPU:3, TPU, 17179869184, 13003718977996479479),\n",
+            " _DeviceAttributes(/job:tpu_worker/replica:0/task:0/device:TPU:4, TPU, 17179869184, 9497965862389323834),\n",
+            " _DeviceAttributes(/job:tpu_worker/replica:0/task:0/device:TPU:5, TPU, 17179869184, 2380413654053854136),\n",
+            " _DeviceAttributes(/job:tpu_worker/replica:0/task:0/device:TPU:6, TPU, 17179869184, 1225631890541632285),\n",
+            " _DeviceAttributes(/job:tpu_worker/replica:0/task:0/device:TPU:7, TPU, 17179869184, 17026788288584056559),\n",
+            " _DeviceAttributes(/job:tpu_worker/replica:0/task:0/device:TPU_SYSTEM:0, TPU_SYSTEM, 8589934592, 5031950969188570087)]\n",
             "\n",
             "\n",
             "Not connected to a GPU runtime.\n"
@@ -196,7 +210,7 @@
       "metadata": {
         "id": "83PeaGO82CB9",
         "colab_type": "code",
-        "outputId": "6bbc9e72-8d8c-41f1-e5a8-cb2f84258a92",
+        "outputId": "d7759531-bece-4b52-e1fb-e72b37e98836",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 85
@@ -253,7 +267,7 @@
         "print(f\"Y.shape = {Y.shape}\")\n",
         "print(f\"Number of examples: {m}\") "
       ],
-      "execution_count": 5,
+      "execution_count": 8,
       "outputs": [
         {
           "output_type": "stream",
@@ -304,7 +318,7 @@
       "metadata": {
         "id": "NpYgE7ygSLTu",
         "colab_type": "code",
-        "outputId": "76e5a7f6-daea-4225-8f39-b169bedb938b",
+        "outputId": "27834289-eca0-4c1c-d129-31174e607c5a",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 85
@@ -324,15 +338,15 @@
         "print(f\"Sample X: {example[0]}\\nCorresponding Y: {example[1]}\")\n",
         "print(f\"\\nTime taken for acquiring this example: {end - start} seconds\")"
       ],
-      "execution_count": 7,
+      "execution_count": 10,
       "outputs": [
         {
           "output_type": "stream",
           "text": [
-            "Sample X: im enough \n",
-            "Corresponding Y: p\n",
+            "Sample X: t take act\n",
+            "Corresponding Y: i\n",
             "\n",
-            "Time taken for acquiring this example: 0.0006067969999996592 seconds\n"
+            "Time taken for acquiring this example: 0.0006574069999984999 seconds\n"
           ],
           "name": "stdout"
         }
@@ -382,7 +396,7 @@
       "metadata": {
         "id": "5GTikSyoerWZ",
         "colab_type": "code",
-        "outputId": "eb3fd799-6c36-4041-8397-4b5571188217",
+        "outputId": "12d15a1d-d3d5-4826-f39c-317b2fa069c0",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 493
@@ -405,7 +419,7 @@
         "\n",
         "model.summary()"
       ],
-      "execution_count": 14,
+      "execution_count": 12,
       "outputs": [
         {
           "output_type": "stream",
@@ -449,7 +463,11 @@
         "id": "WFzkBWLkMA94",
         "colab_type": "code",
         "cellView": "both",
-        "colab": {}
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 1000
+        },
+        "outputId": "dbcf86c0-094d-4fff-fbb6-260aa27c9bf3"
       },
       "source": [
         "\"\"\"\n",
@@ -464,12 +482,232 @@
         "\n",
         "model.compile(optimizer=optimizer, loss='categorical_crossentropy', metrics=['accuracy'])\n",
         "\n",
-        "batch_size = 8192\n",
+        "batch_size = 16384\n",
         "\n",
         "model.fit([X, a0, c0], Y, batch_size=batch_size, epochs=100)"
       ],
-      "execution_count": 0,
-      "outputs": []
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Train on 76520 samples\n",
+            "Epoch 1/100\n",
+            "76520/76520 [==============================] - 9s 122us/sample - loss: 0.4270 - accuracy: 0.8644\n",
+            "Epoch 2/100\n",
+            "76520/76520 [==============================] - 6s 75us/sample - loss: 0.2505 - accuracy: 0.9164\n",
+            "Epoch 3/100\n",
+            "76520/76520 [==============================] - 6s 73us/sample - loss: 0.2055 - accuracy: 0.9296\n",
+            "Epoch 4/100\n",
+            "76520/76520 [==============================] - 6s 72us/sample - loss: 0.1760 - accuracy: 0.9390\n",
+            "Epoch 5/100\n",
+            "76520/76520 [==============================] - 5s 71us/sample - loss: 0.1593 - accuracy: 0.9440\n",
+            "Epoch 6/100\n",
+            "76520/76520 [==============================] - 5s 70us/sample - loss: 0.1460 - accuracy: 0.9481\n",
+            "Epoch 7/100\n",
+            "76520/76520 [==============================] - 6s 75us/sample - loss: 0.1420 - accuracy: 0.9480\n",
+            "Epoch 8/100\n",
+            "76520/76520 [==============================] - 6s 79us/sample - loss: 0.1345 - accuracy: 0.9512\n",
+            "Epoch 9/100\n",
+            "76520/76520 [==============================] - 6s 84us/sample - loss: 0.1328 - accuracy: 0.9521\n",
+            "Epoch 10/100\n",
+            "76520/76520 [==============================] - 6s 85us/sample - loss: 0.1314 - accuracy: 0.9520\n",
+            "Epoch 11/100\n",
+            "76520/76520 [==============================] - 6s 80us/sample - loss: 0.1306 - accuracy: 0.9515\n",
+            "Epoch 12/100\n",
+            "76520/76520 [==============================] - 6s 84us/sample - loss: 0.1282 - accuracy: 0.9526\n",
+            "Epoch 13/100\n",
+            "76520/76520 [==============================] - 7s 86us/sample - loss: 0.1251 - accuracy: 0.9542\n",
+            "Epoch 14/100\n",
+            "76520/76520 [==============================] - 6s 84us/sample - loss: 0.1253 - accuracy: 0.9535\n",
+            "Epoch 15/100\n",
+            "76520/76520 [==============================] - 7s 85us/sample - loss: 0.1253 - accuracy: 0.9541\n",
+            "Epoch 16/100\n",
+            "76520/76520 [==============================] - 6s 84us/sample - loss: 0.1251 - accuracy: 0.9535\n",
+            "Epoch 17/100\n",
+            "76520/76520 [==============================] - 6s 84us/sample - loss: 0.1241 - accuracy: 0.9545\n",
+            "Epoch 18/100\n",
+            "76520/76520 [==============================] - 7s 85us/sample - loss: 0.1245 - accuracy: 0.9544\n",
+            "Epoch 19/100\n",
+            "76520/76520 [==============================] - 6s 82us/sample - loss: 0.1223 - accuracy: 0.9548\n",
+            "Epoch 20/100\n",
+            "76520/76520 [==============================] - 7s 85us/sample - loss: 0.1236 - accuracy: 0.9543\n",
+            "Epoch 21/100\n",
+            "76520/76520 [==============================] - 6s 85us/sample - loss: 0.1252 - accuracy: 0.9533\n",
+            "Epoch 22/100\n",
+            "76520/76520 [==============================] - 7s 85us/sample - loss: 0.1228 - accuracy: 0.9535\n",
+            "Epoch 23/100\n",
+            "76520/76520 [==============================] - 6s 85us/sample - loss: 0.1237 - accuracy: 0.9540\n",
+            "Epoch 24/100\n",
+            "76520/76520 [==============================] - 7s 85us/sample - loss: 0.1254 - accuracy: 0.9530\n",
+            "Epoch 25/100\n",
+            "76520/76520 [==============================] - 6s 84us/sample - loss: 0.1253 - accuracy: 0.9540\n",
+            "Epoch 26/100\n",
+            "76520/76520 [==============================] - 6s 81us/sample - loss: 0.1248 - accuracy: 0.9530\n",
+            "Epoch 27/100\n",
+            "76520/76520 [==============================] - 6s 81us/sample - loss: 0.1238 - accuracy: 0.9548\n",
+            "Epoch 28/100\n",
+            "76520/76520 [==============================] - 6s 82us/sample - loss: 0.1249 - accuracy: 0.9538\n",
+            "Epoch 29/100\n",
+            "76520/76520 [==============================] - 6s 83us/sample - loss: 0.1233 - accuracy: 0.9536\n",
+            "Epoch 30/100\n",
+            "76520/76520 [==============================] - 6s 84us/sample - loss: 0.1228 - accuracy: 0.9538\n",
+            "Epoch 31/100\n",
+            "76520/76520 [==============================] - 6s 85us/sample - loss: 0.1240 - accuracy: 0.9544\n",
+            "Epoch 32/100\n",
+            "76520/76520 [==============================] - 7s 89us/sample - loss: 0.1241 - accuracy: 0.9536\n",
+            "Epoch 33/100\n",
+            "76520/76520 [==============================] - 7s 88us/sample - loss: 0.1248 - accuracy: 0.9534\n",
+            "Epoch 34/100\n",
+            "76520/76520 [==============================] - 7s 92us/sample - loss: 0.1219 - accuracy: 0.9548\n",
+            "Epoch 35/100\n",
+            "76520/76520 [==============================] - 7s 87us/sample - loss: 0.1234 - accuracy: 0.9534\n",
+            "Epoch 36/100\n",
+            "76520/76520 [==============================] - 7s 86us/sample - loss: 0.1252 - accuracy: 0.9532\n",
+            "Epoch 37/100\n",
+            "76520/76520 [==============================] - 6s 81us/sample - loss: 0.1245 - accuracy: 0.9536\n",
+            "Epoch 38/100\n",
+            "76520/76520 [==============================] - 6s 84us/sample - loss: 0.1249 - accuracy: 0.9530\n",
+            "Epoch 39/100\n",
+            "76520/76520 [==============================] - 7s 88us/sample - loss: 0.1252 - accuracy: 0.9525\n",
+            "Epoch 40/100\n",
+            "76520/76520 [==============================] - 7s 91us/sample - loss: 0.1264 - accuracy: 0.9530\n",
+            "Epoch 41/100\n",
+            "76520/76520 [==============================] - 7s 92us/sample - loss: 0.1262 - accuracy: 0.9533\n",
+            "Epoch 42/100\n",
+            "76520/76520 [==============================] - 7s 88us/sample - loss: 0.1243 - accuracy: 0.9542\n",
+            "Epoch 43/100\n",
+            "76520/76520 [==============================] - 7s 87us/sample - loss: 0.1246 - accuracy: 0.9532\n",
+            "Epoch 44/100\n",
+            "76520/76520 [==============================] - 7s 87us/sample - loss: 0.1270 - accuracy: 0.9522\n",
+            "Epoch 45/100\n",
+            "76520/76520 [==============================] - 7s 86us/sample - loss: 0.1252 - accuracy: 0.9530\n",
+            "Epoch 46/100\n",
+            "76520/76520 [==============================] - 7s 86us/sample - loss: 0.1263 - accuracy: 0.9529\n",
+            "Epoch 47/100\n",
+            "76520/76520 [==============================] - 7s 85us/sample - loss: 0.1246 - accuracy: 0.9540\n",
+            "Epoch 48/100\n",
+            "76520/76520 [==============================] - 6s 82us/sample - loss: 0.1249 - accuracy: 0.9532\n",
+            "Epoch 49/100\n",
+            "76520/76520 [==============================] - 6s 82us/sample - loss: 0.1258 - accuracy: 0.9529\n",
+            "Epoch 50/100\n",
+            "76520/76520 [==============================] - 7s 87us/sample - loss: 0.1264 - accuracy: 0.9520\n",
+            "Epoch 51/100\n",
+            "76520/76520 [==============================] - 7s 88us/sample - loss: 0.1252 - accuracy: 0.9532\n",
+            "Epoch 52/100\n",
+            "76520/76520 [==============================] - 7s 86us/sample - loss: 0.1261 - accuracy: 0.9531\n",
+            "Epoch 53/100\n",
+            "76520/76520 [==============================] - 7s 85us/sample - loss: 0.1258 - accuracy: 0.9531\n",
+            "Epoch 54/100\n",
+            "76520/76520 [==============================] - 7s 85us/sample - loss: 0.1280 - accuracy: 0.9526\n",
+            "Epoch 55/100\n",
+            "76520/76520 [==============================] - 6s 80us/sample - loss: 0.1258 - accuracy: 0.9532\n",
+            "Epoch 56/100\n",
+            "76520/76520 [==============================] - 6s 85us/sample - loss: 0.1300 - accuracy: 0.9511\n",
+            "Epoch 57/100\n",
+            "76520/76520 [==============================] - 6s 84us/sample - loss: 0.1266 - accuracy: 0.9530\n",
+            "Epoch 58/100\n",
+            "76520/76520 [==============================] - 7s 85us/sample - loss: 0.1278 - accuracy: 0.9523\n",
+            "Epoch 59/100\n",
+            "76520/76520 [==============================] - 7s 87us/sample - loss: 0.1262 - accuracy: 0.9531\n",
+            "Epoch 60/100\n",
+            "76520/76520 [==============================] - 7s 86us/sample - loss: 0.1237 - accuracy: 0.9534\n",
+            "Epoch 61/100\n",
+            "76520/76520 [==============================] - 6s 82us/sample - loss: 0.1237 - accuracy: 0.9537\n",
+            "Epoch 62/100\n",
+            "76520/76520 [==============================] - 6s 83us/sample - loss: 0.1248 - accuracy: 0.9529\n",
+            "Epoch 63/100\n",
+            "76520/76520 [==============================] - 6s 82us/sample - loss: 0.1243 - accuracy: 0.9533\n",
+            "Epoch 64/100\n",
+            "76520/76520 [==============================] - 7s 86us/sample - loss: 0.1254 - accuracy: 0.9528\n",
+            "Epoch 65/100\n",
+            "76520/76520 [==============================] - 6s 81us/sample - loss: 0.1245 - accuracy: 0.9532\n",
+            "Epoch 66/100\n",
+            "76520/76520 [==============================] - 6s 83us/sample - loss: 0.1269 - accuracy: 0.9526\n",
+            "Epoch 67/100\n",
+            "76520/76520 [==============================] - 7s 91us/sample - loss: 0.1260 - accuracy: 0.9530\n",
+            "Epoch 68/100\n",
+            "76520/76520 [==============================] - 7s 85us/sample - loss: 0.1293 - accuracy: 0.9519\n",
+            "Epoch 69/100\n",
+            "76520/76520 [==============================] - 6s 83us/sample - loss: 0.1261 - accuracy: 0.9526\n",
+            "Epoch 70/100\n",
+            "76520/76520 [==============================] - 6s 83us/sample - loss: 0.1262 - accuracy: 0.9525\n",
+            "Epoch 71/100\n",
+            "76520/76520 [==============================] - 6s 82us/sample - loss: 0.1297 - accuracy: 0.9518\n",
+            "Epoch 72/100\n",
+            "76520/76520 [==============================] - 6s 84us/sample - loss: 0.1267 - accuracy: 0.9528\n",
+            "Epoch 73/100\n",
+            "76520/76520 [==============================] - 6s 85us/sample - loss: 0.1254 - accuracy: 0.9530\n",
+            "Epoch 74/100\n",
+            "76520/76520 [==============================] - 6s 83us/sample - loss: 0.1270 - accuracy: 0.9519\n",
+            "Epoch 75/100\n",
+            "76520/76520 [==============================] - 7s 91us/sample - loss: 0.1264 - accuracy: 0.9526\n",
+            "Epoch 76/100\n",
+            "76520/76520 [==============================] - 7s 86us/sample - loss: 0.1288 - accuracy: 0.9522\n",
+            "Epoch 77/100\n",
+            "76520/76520 [==============================] - 6s 83us/sample - loss: 0.1260 - accuracy: 0.9529\n",
+            "Epoch 78/100\n",
+            "76520/76520 [==============================] - 7s 88us/sample - loss: 0.1233 - accuracy: 0.9539\n",
+            "Epoch 79/100\n",
+            "76520/76520 [==============================] - 7s 85us/sample - loss: 0.1277 - accuracy: 0.9521\n",
+            "Epoch 80/100\n",
+            "76520/76520 [==============================] - 6s 83us/sample - loss: 0.1259 - accuracy: 0.9527\n",
+            "Epoch 81/100\n",
+            "76520/76520 [==============================] - 6s 83us/sample - loss: 0.1275 - accuracy: 0.9523\n",
+            "Epoch 82/100\n",
+            "76520/76520 [==============================] - 6s 82us/sample - loss: 0.1270 - accuracy: 0.9530\n",
+            "Epoch 83/100\n",
+            "76520/76520 [==============================] - 6s 81us/sample - loss: 0.1258 - accuracy: 0.9533\n",
+            "Epoch 84/100\n",
+            "76520/76520 [==============================] - 7s 86us/sample - loss: 0.1270 - accuracy: 0.9518\n",
+            "Epoch 85/100\n",
+            "76520/76520 [==============================] - 6s 83us/sample - loss: 0.1270 - accuracy: 0.9525\n",
+            "Epoch 86/100\n",
+            "76520/76520 [==============================] - 7s 89us/sample - loss: 0.1253 - accuracy: 0.9532\n",
+            "Epoch 87/100\n",
+            "76520/76520 [==============================] - 7s 85us/sample - loss: 0.1253 - accuracy: 0.9527\n",
+            "Epoch 88/100\n",
+            "76520/76520 [==============================] - 7s 86us/sample - loss: 0.1276 - accuracy: 0.9521\n",
+            "Epoch 89/100\n",
+            "76520/76520 [==============================] - 7s 90us/sample - loss: 0.1253 - accuracy: 0.9530\n",
+            "Epoch 90/100\n",
+            "76520/76520 [==============================] - 6s 83us/sample - loss: 0.1264 - accuracy: 0.9525\n",
+            "Epoch 91/100\n",
+            "76520/76520 [==============================] - 7s 86us/sample - loss: 0.1256 - accuracy: 0.9530\n",
+            "Epoch 92/100\n",
+            "76520/76520 [==============================] - 6s 84us/sample - loss: 0.1281 - accuracy: 0.9522\n",
+            "Epoch 93/100\n",
+            "76520/76520 [==============================] - 7s 89us/sample - loss: 0.1268 - accuracy: 0.9521\n",
+            "Epoch 94/100\n",
+            "76520/76520 [==============================] - 6s 83us/sample - loss: 0.1272 - accuracy: 0.9524\n",
+            "Epoch 95/100\n",
+            "76520/76520 [==============================] - 6s 77us/sample - loss: 0.1287 - accuracy: 0.9523\n",
+            "Epoch 96/100\n",
+            "76520/76520 [==============================] - 5s 67us/sample - loss: 0.1259 - accuracy: 0.9530\n",
+            "Epoch 97/100\n",
+            "76520/76520 [==============================] - 5s 65us/sample - loss: 0.1267 - accuracy: 0.9525\n",
+            "Epoch 98/100\n",
+            "76520/76520 [==============================] - 5s 65us/sample - loss: 0.1266 - accuracy: 0.9521\n",
+            "Epoch 99/100\n",
+            "76520/76520 [==============================] - 5s 66us/sample - loss: 0.1273 - accuracy: 0.9522\n",
+            "Epoch 100/100\n",
+            "76520/76520 [==============================] - 5s 69us/sample - loss: 0.1259 - accuracy: 0.9527\n"
+          ],
+          "name": "stdout"
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "<tensorflow.python.keras.callbacks.History at 0x7fb49401b588>"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 32
+        }
+      ]
     },
     {
       "cell_type": "code",
@@ -493,7 +731,7 @@
       "metadata": {
         "id": "CnrScYNaRlFr",
         "colab_type": "code",
-        "outputId": "3c230d3b-3075-4cd8-b7df-47f4f338e0da",
+        "outputId": "ae035fbf-39eb-4e40-ccb0-a5fc425e026a",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 85
@@ -523,13 +761,13 @@
         "  model.save(filepath)\n",
         "  print('First time model is saved.')"
       ],
-      "execution_count": 0,
+      "execution_count": 34,
       "outputs": [
         {
           "output_type": "stream",
           "text": [
             "There was a previous model saved.\n",
-            "Previous accuracy: 96.75%\n",
+            "Previous accuracy: 96.78%\n",
             "Current accuracy: 96.78%\n",
             "New model is saved.\n"
           ],
@@ -559,7 +797,7 @@
       "metadata": {
         "id": "Gw-XXtYuYJ-8",
         "colab_type": "code",
-        "outputId": "777eeb3a-d647-4f07-8989-c74491d3ff50",
+        "outputId": "1fb2fc7f-68c6-4d40-d254-88978708f666",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 34
@@ -573,7 +811,7 @@
         "accuracy = Ram_says.evaluate([X, a0, c0], Y, verbose=0)[1]\n",
         "print(f\"Accuracy on the training set: {round(accuracy*100, 2)}%\")"
       ],
-      "execution_count": 0,
+      "execution_count": 36,
       "outputs": [
         {
           "output_type": "stream",
@@ -589,7 +827,7 @@
       "metadata": {
         "id": "iHJwSspvMVkp",
         "colab_type": "code",
-        "outputId": "511192db-9c96-4325-edd2-125961cb9dbb",
+        "outputId": "ad9ef96f-33bb-405d-a3e4-b0a967568f07",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 88
@@ -647,14 +885,14 @@
         "\n",
         "generate_output()"
       ],
-      "execution_count": 0,
+      "execution_count": 37,
       "outputs": [
         {
           "output_type": "stream",
           "text": [
             "Diversity: 0.2\n",
-            "Your text: The\n",
-            "The The                                 Date-10foce deneed to ave the police of the sent to be some known as “To loon duberd many as it is to New York, to his domestic oil for a long of the weap in Congress she had ease and ensore considerable spending neges and cered to confinced the not on that is a senter aftarity, and a communist confidend ming the enemonity of Congress, complelated to make me to ausheres decart did not prife to meacunion of the Indians, if the stopled. And order to be the same that I am good family defense does money starting ut from America. a recatted to the 1972 Nair ance me to eventle, to stay the cares and even Dieanation, even to geter from the British other trages in Robard on New Yer proved a coffitted them in 1975, up they wanted to raised her free that they will be jasunang but was is the mind end hand of the part endere to the money starting under President during the reader to the side because Opea which states who arm diresten to whith with whith security plannerd "
+            "Your text: He\n",
+            "He He                 O the the mare the contere. It I say the other mary broke even maied. He under the dreamsed, and offectal stayd hims thrir mainiff Uaration with Britas program, but affairenn), she mover worker whose poriot. In from there shiet from Congress. This made colonists and I could not steention of the phase good seve was bring some sy wifher to be his was the first time I haugh  a chulgud a few hap ancelest of the American army. It was the ended on economy suld will be one of the Crime 37 20pacterd History 34, no. 3 (1933): 426. Jule I could lead recrios which shors on you b in American of the min-Contrass right thing the Ridhtn Lassullied (the his deenyd. The president orning the Notthis a. Mricare the cancer of the tamentation brings ho selities, gave not lother on the slave  and memintide this farion of the second Goor of Congresst and sted und beht aid to expent led and even what in the show down I decided to treat meaning as a cresturfiged the tarre of station for priven and the"
           ],
           "name": "stdout"
         }
@@ -713,6 +951,16 @@
       },
       "source": [
         "> The The                                 Date-10foce deneed to ave the police of the sent to be some known as “To loon duberd many as it is to New York, to his domestic oil for a long of the weap in Congress she had ease and ensore considerable spending neges and cered to confinced the not on that is a senter aftarity, and a communist confidend ming the enemonity of Congress, complelated to make me to ausheres decart did not prife to meacunion of the Indians, if the stopled. And order to be the same that I am good family defense does money starting ut from America. a recatted to the 1972 Nair ance me to eventle, to stay the cares and even Dieanation, even to geter from the British other trages in Robard on New Yer proved a coffitted them in 1975, up they wanted to raised her free that they will be jasunang but was is the mind end hand of the part endere to the money starting under President during the reader to the side because Opea which states who arm diresten to whith with whith security plannerd "
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "CFoEB1ni3egY",
+        "colab_type": "text"
+      },
+      "source": [
+        "> He He                 O the the mare the contere. It I say the other mary broke even maied. He under the dreamsed, and offectal stayd hims thrir mainiff Uaration with Britas program, but affairenn), she mover worker whose poriot. In from there shiet from Congress. This made colonists and I could not steention of the phase good seve was bring some sy wifher to be his was the first time I haugh  a chulgud a few hap ancelest of the American army. It was the ended on economy suld will be one of the Crime 37 20pacterd History 34, no. 3 (1933): 426. Jule I could lead recrios which shors on you b in American of the min-Contrass right thing the Ridhtn Lassullied (the his deenyd. The president orning the Notthis a. Mricare the cancer of the tamentation brings ho selities, gave not lother on the slave  and memintide this farion of the second Goor of Congresst and sted und beht aid to expent led and even what in the show down I decided to treat meaning as a cresturfiged the tarre of station for priven and the"
       ]
     }
   ]
