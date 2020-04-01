@@ -75,7 +75,7 @@ n_L = 2 # two LSTM layers
 ```
 
 
-### **RESULTS**
+### **RESULTS AND FUTURE WORK**
 
 ---
 
@@ -87,7 +87,11 @@ These are the first 400 characters my model wrote:
 
 Upon examining this creation, it is evident that the model is not at its best. There are multiple spelling errors (ingarding, guvern, etc.) in the text. But on the bright side, the model realizes basic punctuation like commas, period, and capitalization of the first character of the sentence.
 
-I will be playing with the temperature and the earlier mentioned hyperparameters to better tune the model.
+I will be taking the following steps to improve my model:
+
++ Playing with the temperature and the earlier mentioned hyperparameters to better tune the model.
+
++ Either using Keras-Tuner or manually iterating over the hyperparameters to tune them faster.
 
 ### **LIVE CODE**
 
